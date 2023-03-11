@@ -15,9 +15,7 @@ namespace Viber.ChatApi
 			Buttons = buttons;
         }
 
-        public string Type => "keyboard";
-
-		/// <summary>
+        /// <summary>
 		/// Array containing all keyboard buttons by order.
 		/// </summary>
 		[JsonPropertyName("Buttons")]

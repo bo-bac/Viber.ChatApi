@@ -147,6 +147,9 @@ namespace Viber.ChatApi
         public Task<long> SendBroadcastMessageAsync(BroadcastMessage message) => SendMessageAsync(message, true);
 
         /// <inheritdoc />
+        public Task<long> SendRichMediaMessageAsync(RichMediaMessage message) => SendMessageAsync(message);
+
+        /// <inheritdoc />
         public bool ValidateWebhookHash(string signatureHeader, string jsonMessage)
         {
             if (signatureHeader == null || jsonMessage == null)

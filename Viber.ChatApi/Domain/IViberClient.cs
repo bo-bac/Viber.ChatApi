@@ -107,12 +107,19 @@ namespace Viber.ChatApi
 		/// <returns>Message token.</returns>
 		Task<long> SendBroadcastMessageAsync(BroadcastMessage message);
 
-		/// <summary>
-		/// Validate hash.
+        /// <summary>
+		/// Sends Rich Media message to Viber users.
 		/// </summary>
-		/// <param name="signatureHeader">Value of "X-Viber-Content-Signature" header.</param>
-		/// <param name="jsonMessage">JSON message.</param>
-		/// <returns><c>true</c> if valid.</returns>
-		bool ValidateWebhookHash(string signatureHeader, string jsonMessage);
+		/// <param name="message">Instance of <see cref="RichMediaMessage"/>.</param>
+		/// <returns>Message token.</returns>
+		Task<long> SendRichMediaMessageAsync(RichMediaMessage message);
+
+        /// <summary>
+        /// Validate hash.
+        /// </summary>
+        /// <param name="signatureHeader">Value of "X-Viber-Content-Signature" header.</param>
+        /// <param name="jsonMessage">JSON message.</param>
+        /// <returns><c>true</c> if valid.</returns>
+        bool ValidateWebhookHash(string signatureHeader, string jsonMessage);
 	}
 }

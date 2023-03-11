@@ -40,10 +40,10 @@ namespace Viber.ChatApi
         [JsonPropertyName("tracking_data")]
 		public string TrackingData { get; set; } = default!;
 
-        /// <summary>
-        /// Minimal API version required by clients for this message (default 1).
-        /// </summary>
-        [JsonPropertyName("min_api_version")]
-		public double? MinApiVersion { get; set; }
+		/// <summary>
+		/// Minimal API version required by clients for this message (default 1).
+		/// </summary>
+		[JsonPropertyName("min_api_version")]
+		public double? MinApiVersion { get; set; } = 6;
 	}
 }
