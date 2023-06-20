@@ -3,17 +3,17 @@ using System.Text.Json.Serialization;
 
 namespace Viber.ChatApi
 {
-	/// <summary>
-	/// Keyboard object.
-	/// </summary>
-	public class RichMedia
+    /// <summary>
+    /// Keyboard object.
+    /// </summary>
+    public class RichMedia
     {
-		public RichMedia() { }
+        public RichMedia() { }
 
-        public RichMedia(params KeyboardButton[] buttons) 
-		{
-			Buttons = buttons;
-        }      
+        public RichMedia(params KeyboardButton[] buttons)
+        {
+            Buttons = buttons;
+        }
 
         /// <summary>
         /// Represents size of block for grouping buttons during layout.
@@ -33,12 +33,12 @@ namespace Viber.ChatApi
         /// Array containing all keyboard buttons by order.
         /// </summary>
         [JsonPropertyName("Buttons")]
-		public ICollection<KeyboardButton> Buttons { get; set; } = default!;
+        public ICollection<KeyboardButton> Buttons { get; set; } = default!;
 
-		/// <summary>
-		/// Background color of the keyboard (valid color HEX value).
-		/// </summary>
-		[JsonPropertyName("BgColor")]
-		public string BackgroundColor { get; set; } = default!;
-	}
+        /// <summary>
+        /// Background color of the keyboard (valid color HEX value).
+        /// </summary>
+        [JsonPropertyName("BgColor")]
+        public string BackgroundColor { get; set; } = default!;
+    }
 }

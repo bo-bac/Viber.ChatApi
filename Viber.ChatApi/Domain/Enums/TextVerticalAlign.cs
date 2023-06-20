@@ -8,23 +8,23 @@ namespace Viber.ChatApi
     /// </summary>
     [JsonConverter(typeof(JsonStringEnumMemberConverter))]
     public enum TextVerticalAlign
-	{
-		/// <summary>
-		/// Align 'top'.
-		/// </summary>
-		[EnumMember(Value = "top")]
-		Top = 1,
+    {
+        /// <summary>
+        /// Align 'top'.
+        /// </summary>
+        [EnumMember(Value = "top")]
+        Top = 1,
 
-		/// <summary>
-		/// Align 'middle'.
-		/// </summary>
-		[EnumMember(Value = "middle")]
-		Middle = 2,
+        /// <summary>
+        /// Align 'middle'.
+        /// </summary>
+        [EnumMember(Value = "middle")]
+        Middle = 2,
 
-		/// <summary>
-		/// Align 'bottom'.
-		/// </summary>
-		[EnumMember(Value = "bottom")]
-		Bottom = 3
-	}
+        /// <summary>
+        /// Align 'bottom'.
+        /// </summary>
+        [EnumMember(Value = "bottom")]
+        Bottom = 3
+    }
 }

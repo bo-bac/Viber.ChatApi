@@ -8,17 +8,17 @@ namespace Viber.ChatApi
     /// </summary>
     [JsonConverter(typeof(JsonStringEnumMemberConverter))]
     public enum OpenUrlType
-	{
-		/// <summary>
-		/// Type 'internal'.
-		/// </summary>
-		[EnumMember(Value = "internal")]
-		Internal = 1,
+    {
+        /// <summary>
+        /// Type 'internal'.
+        /// </summary>
+        [EnumMember(Value = "internal")]
+        Internal = 1,
 
-		/// <summary>
-		/// Type 'external'.
-		/// </summary>
-		[EnumMember(Value = "external")]
-		External = 2
-	}
+        /// <summary>
+        /// Type 'external'.
+        /// </summary>
+        [EnumMember(Value = "external")]
+        External = 2
+    }
 }

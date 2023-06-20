@@ -30,7 +30,7 @@ internal class JsonStringEnumMemberConverter<TEnum> : JsonConverter<TEnum>
     private const int MaximumAutoGrowthCacheSize = 64;
 
 #if NETSTANDARD2_0
-		private static readonly string[] s_Split = new string[] { ", " };
+    private static readonly string[] s_Split = new string[] { ", " };
 #endif
 
     private readonly bool _AllowIntegerValues;

@@ -8,23 +8,23 @@ namespace Viber.ChatApi
     /// </summary>
     [JsonConverter(typeof(JsonStringEnumMemberConverter))]
     public enum TextSize
-	{
-		/// <summary>
-		/// Size 'small'.
-		/// </summary>
-		[EnumMember(Value = "small")]
-		Small = 1,
+    {
+        /// <summary>
+        /// Size 'small'.
+        /// </summary>
+        [EnumMember(Value = "small")]
+        Small = 1,
 
-		/// <summary>
-		/// Size 'regular'.
-		/// </summary>
-		[EnumMember(Value = "regular")]
-		Regular = 2,
+        /// <summary>
+        /// Size 'regular'.
+        /// </summary>
+        [EnumMember(Value = "regular")]
+        Regular = 2,
 
-		/// <summary>
-		/// Size 'large'.
-		/// </summary>
-		[EnumMember(Value = "large")]
-		Large = 3
-	}
+        /// <summary>
+        /// Size 'large'.
+        /// </summary>
+        [EnumMember(Value = "large")]
+        Large = 3
+    }
 }

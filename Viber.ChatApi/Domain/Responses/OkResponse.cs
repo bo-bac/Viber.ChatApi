@@ -5,9 +5,9 @@
 /// </summary>
 public class OkResponse : ApiResponseBase
 {
-	public OkResponse()
-	{
-		Status = ErrorCode.Ok;
-		StatusMessage = "ok";
-	}
+    public OkResponse()
+    {
+        Status = ErrorCode.Ok;
+        StatusMessage = "ok";
+    }
 }

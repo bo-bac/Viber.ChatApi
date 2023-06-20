@@ -90,7 +90,7 @@ namespace Viber.ChatApi
         }
 
         /// <inheritdoc />
-		public async Task<ICollection<UserOnlineStatus>> GetOnlineAsync(ICollection<string> ids)
+        public async Task<ICollection<UserOnlineStatus>> GetOnlineAsync(ICollection<string> ids)
         {
             var result = await RequestApiAsync<GetOnlineResponse>(
                 "get_online",
